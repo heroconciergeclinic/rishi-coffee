@@ -4,6 +4,10 @@
 
 const CHECKOUT_URL = null; // e.g. Shopify cart permalink, once the store exists
 
+// Google Apps Script web app that writes sign-ups to the
+// "Rishi Coffee – Drop Sign-ups" sheet (see google-apps-script/Code.gs).
+const SIGNUP_URL = 'https://script.google.com/macros/s/AKfycbzW2Y0y3wpHnEG7p_Z0_nDxH4QcHZlS59db6QnqE6jSmDC6O7oTC82W0mw6PDbSW_rAdg/exec';
+
 const PRODUCTS = {
   single: { name: 'The Single', detail: '1 × 12 oz vanilla latte', price: 6, img: 'images/spill.jpg' },
   fourpack: { name: 'The 4-Pack', detail: '4 × 12 oz vanilla latte', price: 20, img: 'images/four-pack.jpg' },
@@ -179,18 +183,43 @@ document.addEventListener('DOMContentLoaded', () => {
   // Drop sign-up (not connected to a list yet)
   const form = $('#drop-form');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const email = form.email.value.trim();
       const phone = form.phone.value.trim();
       const status = $('#form-status');
+      const button = form.querySelector('button[type="submit"]');
       if (!email && !phone) {
         status.textContent = 'Add a phone number or email so we can reach you.';
         return;
       }
-      // TODO: send to Shopify customers, Klaviyo or a form service.
-      status.textContent = `You're on the list${form.name.value.trim() ? ', ' + form.name.value.trim().split(' ')[0] : ''}! We'll ping you when the next drop is ready.`;
-      form.reset();
+      if (phone && !form.texts.checked) {
+        status.textContent = 'Tick the box so we can text you (or just leave your email).';
+        return;
+      }
+      const first = form.name.value.trim().split(' ')[0];
+      const body = new URLSearchParams({
+        name: form.name.value.trim(),
+        phone,
+        email,
+        texts: form.texts.checked ? 'yes' : 'no',
+        website: form.website.value,
+        page: location.href,
+      });
+      button.disabled = true;
+      status.textContent = 'Saving…';
+      try {
+        if (SIGNUP_URL) {
+          // no-cors: Apps Script doesn't send CORS headers; the row is still written.
+          await fetch(SIGNUP_URL, { method: 'POST', mode: 'no-cors', body });
+        }
+        status.textContent = `You're on the list${first ? ', ' + first : ''}! See you Sunday night.`;
+        form.reset();
+      } catch (err) {
+        status.textContent = "Hmm, that didn't go through. Try again, or DM @rishi.coffee.";
+      } finally {
+        button.disabled = false;
+      }
     });
   }
 

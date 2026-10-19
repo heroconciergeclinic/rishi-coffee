@@ -22,7 +22,15 @@ Rishi Coffee's website (coffeebyrishi.com, served at www.coffeebyrishi.com; DNS 
 - The 4-Pack: $20 (`data-add="fourpack"`)
 - Prices live in `PRODUCTS` in `cart.js` and on the cards in `index.html`; change both.
 
+## Sign-ups
+
+- The drop form posts to a Google Apps Script web app (`SIGNUP_URL` in `cart.js`), which appends rows to the "Rishi Coffee – Drop Sign-ups" Google Sheet. Script source: `google-apps-script/Code.gs`.
+- Phone sign-ups require the texting consent checkbox. Texting service (Klaviyo) not connected yet.
+
 ## Not connected yet
 
 - Checkout: `CHECKOUT_URL` in `cart.js` (Shopify later).
-- Drop sign-up form: shows a thank-you only; nothing is saved.
+
+## Saved versions
+
+- `v1.0-launch` branch: the launch version (Oct 19, 2026).

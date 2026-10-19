@@ -218,15 +218,17 @@
   <div class="wrap section split">
     <div>
       <h2 class="h-lg">never miss a drop.</h2>
-      <p style="margin-top:20px;max-width:480px;font-size:19px">Quarterly drops are small batch and go fast. Leave your info and we'll text or email you the moment the next one is ready.</p>
+      <p style="margin-top:20px;max-width:480px;font-size:19px">Coffee comes in small batches, but happiness doesn't have to. Sign up and every Sunday night we'll text you a quick one-liner to make you smile before Monday, plus a heads-up the moment the next drop lands.</p>
     </div>
     <form class="drop-form" id="drop-form" novalidate>
       <div class="field"><label for="drop-name">Name</label><input id="drop-name" name="name" type="text" autocomplete="name"></div>
       <div class="field"><label for="drop-phone">Phone</label><input id="drop-phone" name="phone" type="tel" autocomplete="tel"></div>
       <div class="field"><label for="drop-email">Email</label><input id="drop-email" name="email" type="email" autocomplete="email"></div>
-      <button class="btn btn-light btn-lg" type="submit">Notify me</button>
+      <div class="hp" aria-hidden="true"><label for="drop-website">Website</label><input id="drop-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <label class="check"><input type="checkbox" name="texts" value="yes"> <span>Yes, text me Sunday smiles and drop alerts from Rishi Coffee. Up to 1–2 texts a week. Msg &amp; data rates may apply. Reply STOP to opt out anytime.</span></label>
+      <button class="btn btn-light btn-lg" type="submit">Count me in</button>
       <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-      <p class="consent">By sharing your phone number you agree to get texts about Rishi Coffee drops. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
+      <p class="consent">We'll only use your info for Rishi Coffee updates. No spam, no sharing.</p>
     </form>
   </div>
 </section>
