@@ -1,13 +1,13 @@
 # Notes for Claude
 
-Rishi Coffee's website (coffeewithrishi.com). Plain HTML/CSS/JS, no build step.
+Rishi Coffee's website (coffeebyrishi.com, served at www.coffeebyrishi.com; DNS at Porkbun). Plain HTML/CSS/JS, no build step.
 
 ## How updates work
 
 1. Edit the files here.
 2. Commit and push to `main` on GitHub (heroconciergeclinic/rishi-coffee).
 3. Vercel (project `rishi-coffee`, "hero" team) deploys automatically on every push.
-   Live at https://rishi-coffee.vercel.app until the custom domain is connected.
+   Live at https://www.coffeebyrishi.com (also https://rishi-coffee.vercel.app).
 
 ## Brand
 
