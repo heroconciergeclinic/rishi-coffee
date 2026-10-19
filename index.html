@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rishi Coffee · Small batch vanilla lattes, bottled in Chicago</title>
+  <meta name="description" content="Real ingredients. Real good coffee. Small batch vanilla lattes made with espresso, milk and homemade vanilla syrup, bottled by hand in Chicago.">
+  <meta property="og:title" content="Rishi Coffee">
+  <meta property="og:description" content="Small batch vanilla lattes, bottled by hand in Chicago.">
+  <meta property="og:image" content="images/hero-beans.jpg">
+  <meta name="theme-color" content="#1E4A34">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500&family=Outfit:wght@400;500;600;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+<div class="announce">Small batch. Big flavor. · Bottled in Chicago · Keep refrigerated, shake well</div>
+
+<header class="header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html" aria-label="Rishi Coffee home">
+      <span>Rishi<br>Coffee</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 2c.8 5.2 2.3 6.7 7.5 7.5C11.3 10.3 9.8 11.8 9 17c-.8-5.2-2.3-6.7-7.5-7.5C6.7 8.7 8.2 7.2 9 2z"/><path d="M19 12c.4 2.6 1.1 3.3 3.7 3.7-2.6.4-3.3 1.1-3.7 3.7-.4-2.6-1.1-3.3-3.7-3.7 2.6-.4 3.3-1.1 3.7-3.7z"/></svg>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a href="story.html">Our Story</a>
+      <a href="#inside">What's Inside</a>
+      <a href="#find">Find Us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn cart-btn" type="button" data-open-cart>Cart (<span data-cart-count>0</span>)</button>
+      <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="wrap hero">
+  <div class="split">
+    <div>
+      <h1 class="h-xl">real ingredients. real good coffee.</h1>
+      <div class="rule"></div>
+      <p class="lead">small batch. made for you.</p>
+      <p class="muted" style="margin-top:14px;max-width:500px;font-size:18px">A 12 oz vanilla latte with espresso, milk and homemade vanilla syrup. Bottled by hand in Chicago. Grab one cold and go.</p>
+      <div class="btn-row">
+        <a class="btn btn-dark btn-lg" href="#shop">Shop the latte</a>
+        <a class="btn btn-lg" href="#find">Where to find us</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="images/hero-beans.jpg" alt="Rishi Coffee vanilla latte bottle lying on a bed of coffee beans" width="724" height="1086" fetchpriority="high">
+      <div class="badge" aria-hidden="true"><i></i><i></i><i></i><b>MADE IN<span>CHICAGO</span></b></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip" aria-label="What's in the bottle">
+  <div class="wrap">
+    <div class="name"><strong>vanilla</strong><span>latte</span></div>
+    <div class="item"><h2>espresso</h2><p>The coffee backbone. Smooth, not bitter.</p></div>
+    <div class="item"><h2>milk</h2><p>A2 whole milk for a creamy finish.</p></div>
+    <div class="item"><h2>homemade vanilla</h2><p>Our own syrup. 100 calories a bottle.</p></div>
+  </div>
+</section>
+
+<section class="wrap section" id="shop">
+  <div class="section-head">
+    <h2 class="h-lg">stock the fridge.</h2>
+    <p style="font-weight:500">Keep refrigerated · shake before enjoying</p>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <img class="photo" src="images/spill.jpg" alt="A single bottle of Rishi Coffee vanilla latte on a kitchen counter" loading="lazy">
+      <h3>The Single</h3>
+      <p class="muted">One 12 oz vanilla latte.</p>
+      <p class="price">$6</p>
+      <button class="btn btn-dark" type="button" data-add="single">Add to cart</button>
+    </article>
+    <article class="card featured">
+      <img class="photo" src="images/four-pack.jpg" alt="Four bottles of vanilla latte lined up on a table by the window" loading="lazy">
+      <div class="row"><h3>The 4-Pack</h3><span class="pill">MOST POPULAR</span></div>
+      <p class="muted">Your weekday mornings, handled.</p>
+      <p class="price">$20 <small>save $4</small></p>
+      <button class="btn btn-dark" type="button" data-add="fourpack">Add to cart</button>
+    </article>
+    <article class="card">
+      <img class="photo" src="images/cooler.jpg" alt="Rishi Coffee bottles packed in an insulated cooler with a branded cup" loading="lazy">
+      <h3>Quarterly Drop</h3>
+      <p class="muted">A limited small batch, four times a year. Once it's gone, it's gone.</p>
+      <p class="price">Next drop: coming soon</p>
+      <a class="btn btn-accent" href="#drops">Get notified</a>
+    </article>
+  </div>
+</section>
+
+<section class="tint" id="story">
+  <div class="wrap section split">
+    <div class="photo-pair">
+      <img src="images/pour.jpg" alt="Milk being poured into a labeled bottle of espresso" loading="lazy">
+      <img src="images/batch.jpg" alt="A box of finished bottles next to empty labeled bottles waiting to be filled" loading="lazy">
+    </div>
+    <div>
+      <p class="eyebrow">small batch · bottled by Rishi</p>
+      <h2 class="h-lg">every bottle, by hand.</h2>
+      <p class="body-lg" style="margin-top:24px">Espresso first, then milk, then our homemade vanilla. Labeled, capped and chilled in small batches right here in Chicago.</p>
+      <p class="body-lg muted" style="margin-top:16px">I'm an anesthesiologist and a competitive latte artist. I wanted a bottled latte made with the same care as a pour at the bar.</p>
+      <div class="btn-row" style="margin-top:28px"><a class="btn" href="story.html">Read our story</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" id="flavors">
+  <h2 class="h-lg" style="margin-bottom:12px">the lineup.</h2>
+  <p class="muted" style="margin-bottom:40px;font-size:18px">One classic today. More flavors on the way.</p>
+  <div class="grid">
+    <article class="flavor">
+      <img class="label-img" src="images/label.jpg" alt="The Rishi Coffee vanilla latte label" loading="lazy">
+      <div class="row" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px"><h3>Vanilla Latte</h3><span class="pill">AVAILABLE NOW</span></div>
+      <p class="muted">Espresso, milk and homemade vanilla syrup.</p>
+      <a class="more" href="#shop">Shop vanilla</a>
+    </article>
+    <article class="flavor soon">
+      <img class="label-img" src="images/banana-label.jpg" alt="The Rishi Coffee banana latte label" loading="lazy">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px"><h3>Banana Latte</h3><span class="pill outline">COMING SOON</span></div>
+      <p class="muted">Espresso, milk and homemade banana syrup.</p>
+      <a class="more" href="#drops">Get notified when it drops</a>
+    </article>
+    <article class="flavor matcha">
+      <div class="mock-label" role="img" aria-label="Rishi Coffee vanilla matcha label">
+        <div class="left">
+          <p class="brand">Rishi<br>Coffee</p>
+          <div class="art"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#E8F0E2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c4 3 6 6 6 9a6 6 0 0 1-12 0c0-3 2-6 6-9z"/><path d="M12 8v11"/><path d="M12 12l3-2M12 15l-3-2"/></svg></div>
+          <p class="meta">small batch · bottled by Rishi</p>
+          <p class="ing">• milk<br>• matcha<br>• homemade vanilla syrup</p>
+          <p class="foot">12oz · @rishi.coffee</p>
+        </div>
+        <div class="vert"><strong>vanilla</strong><span>matcha</span></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px"><h3>Vanilla Matcha</h3><span class="pill matcha">COMING SOON</span></div>
+      <p class="muted">Matcha, milk and homemade vanilla syrup.</p>
+      <a class="more" href="#drops">Get notified when it drops</a>
+    </article>
+  </div>
+</section>
+
+<section class="dark" id="inside">
+  <div class="wrap section split">
+    <div>
+      <h2 class="h-lg" style="margin-bottom:16px">nothing to hide.</h2>
+      <p style="font-size:20px;max-width:520px">100 calories, A2 whole milk, and ingredients you can actually read.</p>
+      <p class="fineprint">Nutrition facts calculated by Rishi Coffee. Not verified by the FDA.</p>
+    </div>
+    <figure class="nutrition" style="margin:0 auto">
+      <img src="images/nutrition.jpg" alt="Nutrition facts: 100 calories per 12 fl oz; ingredients brewed coffee, A2 whole milk, cane sugar, brown sugar, honey, vanilla extract, cinnamon" loading="lazy">
+      <figcaption>Nutrition facts · Vanilla Latte</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="reviews" aria-label="Reviews">
+  <div class="wrap section">
+    <h2 class="h-md" style="margin-bottom:36px">what people are saying</h2>
+    <div class="grid">
+      <figure class="review"><blockquote>“We split a 4-pack every week and still fight over the last bottle.”</blockquote><figcaption>Neel &amp; Jackie Vaidya</figcaption></figure>
+      <figure class="review"><blockquote>“Better than my usual café latte, and no line.”</blockquote><figcaption>Nitika Bhatia</figcaption></figure>
+      <figure class="review"><blockquote>“Perfectly sweet. You can actually taste the vanilla.”</blockquote><figcaption>Merin Matthews</figcaption></figure>
+      <figure class="review"><blockquote>“I grab one from the fridge on my way out every morning.”</blockquote><figcaption>Harsh Rawal</figcaption></figure>
+      <figure class="review"><blockquote>“Smooth, creamy, not too strong. Exactly what a latte should be.”</blockquote><figcaption>Dhruv Pandya</figcaption></figure>
+      <figure class="review"><blockquote>“The bottle is cute, but the coffee is why I keep ordering.”</blockquote><figcaption>Priya Shah</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" aria-label="Instagram">
+  <div class="section-head" style="margin-bottom:28px">
+    <h2 class="h-md">seen around town</h2>
+    <a class="ig-handle" href="https://instagram.com/rishi.coffee">@rishi.coffee</a>
+  </div>
+  <div class="ig-grid">
+    <img src="images/still.jpg" alt="Rishi Coffee bottle on a counter with the lake behind it" loading="lazy">
+    <img src="images/box.jpg" alt="A box packed with labeled bottles, seen from above" loading="lazy">
+    <img src="images/pour.jpg" alt="Milk pouring into a bottle" loading="lazy">
+    <img src="images/event-shelf.jpg" alt="Rishi Coffee bottles on a rustic shelf at a baby shower" loading="lazy">
+    <img src="images/cooler.jpg" alt="Bottles in a cooler above the Chicago lakefront" loading="lazy">
+  </div>
+</section>
+
+<section class="wrap" id="find" style="padding-bottom:96px">
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+    <div class="find-card">
+      <h2>find us</h2>
+      <p class="muted" style="margin-top:12px">Cafés, shops and pickup spots that carry Rishi Coffee.</p>
+      <ul class="locations">
+        <li><strong>474 N Lake Shore Drive</strong><span class="muted">Streeterville</span><a href="https://maps.google.com/?q=474+N+Lake+Shore+Dr+Chicago+IL">Directions</a></li>
+        <li><strong>1416 W Belmont Ave</strong><span class="muted">Lakeview</span><a href="https://maps.google.com/?q=1416+W+Belmont+Ave+Chicago+IL">Directions</a></li>
+      </ul>
+    </div>
+    <div class="wholesale">
+      <img src="images/box.jpg" alt="" loading="lazy">
+      <div>
+        <h2>carry Rishi</h2>
+        <p>Cafés, gyms, offices and events. Put our vanilla latte in your fridge.</p>
+        <a class="btn btn-light" href="https://instagram.com/rishi.coffee" style="margin-top:8px">DM us on Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="drops" id="drops">
+  <div class="wrap section split">
+    <div>
+      <h2 class="h-lg">never miss a drop.</h2>
+      <p style="margin-top:20px;max-width:480px;font-size:19px">Quarterly drops are small batch and go fast. Leave your info and we'll text or email you the moment the next one is ready.</p>
+    </div>
+    <form class="drop-form" id="drop-form" novalidate>
+      <div class="field"><label for="drop-name">Name</label><input id="drop-name" name="name" type="text" autocomplete="name"></div>
+      <div class="field"><label for="drop-phone">Phone</label><input id="drop-phone" name="phone" type="tel" autocomplete="tel"></div>
+      <div class="field"><label for="drop-email">Email</label><input id="drop-email" name="email" type="email" autocomplete="email"></div>
+      <button class="btn btn-light btn-lg" type="submit">Notify me</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      <p class="consent">By sharing your phone number you agree to get texts about Rishi Coffee drops. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div style="flex:1 1 320px">
+      <p class="footer-brand">Rishi<br>Coffee</p>
+      <p style="margin-top:16px;opacity:.85">Small batch. Big flavor. Bottled in Chicago.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <div><strong>Shop</strong><a href="#shop">Vanilla Latte</a><a href="#drops">Quarterly Drops</a><a href="#find">Wholesale</a></div>
+      <div><strong>About</strong><a href="story.html">Our Story</a><a href="#inside">What's Inside</a><a href="#find">Find Us</a></div>
+      <div><strong>Follow</strong><a href="https://instagram.com/rishi.coffee">Instagram</a></div>
+    </nav>
+  </div>
+  <p class="wrap copyright">© <span data-year>2026</span> Rishi Coffee · Made in Chicago</p>
+</footer>
+
+</body>
+</html>
