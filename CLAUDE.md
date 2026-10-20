@@ -31,6 +31,14 @@ Rishi Coffee's website (coffeebyrishi.com, served at www.coffeebyrishi.com; DNS 
 
 - Checkout: `CHECKOUT_URL` in `cart.js` (Shopify later).
 
+## Legal pages
+
+- `privacy.html` and `terms.html` (includes SMS terms at `terms.html#sms`), linked from every footer and the sign-up form. Contact is Instagram DM only; don't add a personal email.
+
+## Commits
+
+- Commit as "Rishi Coffee" <310411761+heroconciergeclinic@users.noreply.github.com> (GitHub private address). Never use a personal email.
+
 ## Saved versions
 
 - `v1.0-launch` branch: the launch version (Oct 19, 2026).

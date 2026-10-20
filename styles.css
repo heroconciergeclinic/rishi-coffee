@@ -238,3 +238,14 @@ p { margin: 0; }
   html { scroll-behavior: auto; }
   .drawer, .overlay, .toast { transition: none; }
 }
+
+/* Privacy and terms pages */
+.legal { max-width: 760px; }
+.legal .updated { color: var(--muted); margin-top: 12px; }
+.legal h2 { font-size: 28px; letter-spacing: -0.01em; margin-top: 44px; margin-bottom: 12px; }
+.legal p { margin-top: 14px; }
+.legal ul { margin: 14px 0 0; padding-left: 22px; }
+.legal li { margin-top: 10px; }
+.legal > p:first-of-type + p { margin-top: 28px; }
+.drops .check a, .drops .consent a { color: var(--paper); }
+.copyright a { color: var(--paper); }
