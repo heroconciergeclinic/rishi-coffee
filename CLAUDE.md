@@ -21,6 +21,7 @@ Rishi Coffee's website (coffeebyrishi.com, served at www.coffeebyrishi.com; DNS 
 - The Single: $6 (`data-add="single"`)
 - The 4-Pack: $20 (`data-add="fourpack"`)
 - Prices live in `PRODUCTS` in `cart.js` and on the cards in `index.html`; change both.
+- Sold out (Oct 21, 2026): Single and 4-Pack. To restock, remove the id from `SOLD_OUT` in `cart.js` and in `index.html` remove `sold-out` from the card class, the `sold-badge` span and the `restock` link, and restore `<button class="btn btn-dark" type="button" data-add="single|fourpack">Add to cart</button>`.
 
 ## Sign-ups
 
@@ -42,3 +43,5 @@ Rishi Coffee's website (coffeebyrishi.com, served at www.coffeebyrishi.com; DNS 
 ## Saved versions
 
 - `v1.0-launch` branch: the launch version (Oct 19, 2026).
+- `v1.1-saved` branch: adds sign-ups to Google Sheets and privacy/terms pages, before sold out (Oct 21, 2026).
+- To restore a saved version: reset `main` to that branch and push, or use Instant Rollback on that deployment in Vercel.

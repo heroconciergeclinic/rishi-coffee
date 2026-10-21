@@ -77,19 +77,21 @@
     <p style="font-weight:500">Keep refrigerated · shake before enjoying</p>
   </div>
   <div class="grid">
-    <article class="card">
-      <img class="photo" src="images/spill.jpg" alt="A single bottle of Rishi Coffee vanilla latte on a kitchen counter" loading="lazy">
+    <article class="card sold-out">
+      <div class="photo-wrap"><img class="photo" src="images/spill.jpg" alt="A single bottle of Rishi Coffee vanilla latte on a kitchen counter" loading="lazy"><span class="sold-badge">sold out</span></div>
       <h3>The Single</h3>
       <p class="muted">One 12 oz vanilla latte.</p>
       <p class="price">$6</p>
-      <button class="btn btn-dark" type="button" data-add="single">Add to cart</button>
+      <button class="btn btn-dark" type="button" disabled aria-disabled="true">Sold out</button>
+      <a class="restock" href="#drops">Get a text when it's back →</a>
     </article>
-    <article class="card featured">
-      <img class="photo" src="images/four-pack.jpg" alt="Four bottles of vanilla latte lined up on a table by the window" loading="lazy">
+    <article class="card featured sold-out">
+      <div class="photo-wrap"><img class="photo" src="images/four-pack.jpg" alt="Four bottles of vanilla latte lined up on a table by the window" loading="lazy"><span class="sold-badge">sold out</span></div>
       <div class="row"><h3>The 4-Pack</h3><span class="pill">MOST POPULAR</span></div>
       <p class="muted">Your weekday mornings, handled.</p>
       <p class="price">$20 <small>save $4</small></p>
-      <button class="btn btn-dark" type="button" data-add="fourpack">Add to cart</button>
+      <button class="btn btn-dark" type="button" disabled aria-disabled="true">Sold out</button>
+      <a class="restock" href="#drops">Get a text when it's back →</a>
     </article>
     <article class="card">
       <img class="photo" src="images/cooler.jpg" alt="Rishi Coffee bottles packed in an insulated cooler with a branded cup" loading="lazy">

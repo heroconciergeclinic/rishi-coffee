@@ -249,3 +249,10 @@ p { margin: 0; }
 .legal > p:first-of-type + p { margin-top: 28px; }
 .drops .check a, .drops .consent a { color: var(--paper); }
 .copyright a { color: var(--paper); }
+
+/* Sold out */
+.photo-wrap { position: relative; }
+.sold-out .photo { filter: grayscale(0.35) brightness(0.92); }
+.sold-badge { position: absolute; top: 16px; right: 16px; background: var(--ink); color: var(--paper); font-family: var(--serif); font-weight: 700; font-size: 22px; letter-spacing: -0.01em; padding: 8px 18px; border-radius: 999px; transform: rotate(6deg); box-shadow: 0 4px 14px rgba(0,0,0,0.18); }
+.card .btn[disabled] { background: var(--line); border-color: var(--line); color: var(--muted); cursor: not-allowed; }
+.restock { align-self: center; font-weight: 600; font-size: 15px; color: var(--accent); }

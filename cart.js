@@ -30,6 +30,11 @@ function saveCart() {
 
 let cart = loadCart();
 
+// Products currently sold out: they can't be added, and are cleared from saved carts.
+// To restock, remove the id here and restore its "Add to cart" button in index.html.
+const SOLD_OUT = ['single', 'fourpack'];
+SOLD_OUT.forEach((id) => { delete cart[id]; });
+
 const $ = (sel, root = document) => root.querySelector(sel);
 const money = (n) => '$' + n.toFixed(n % 1 ? 2 : 0);
 
@@ -127,6 +132,7 @@ function toast(message) {
 }
 
 function addToCart(id) {
+  if (SOLD_OUT.includes(id)) { toast('Sold out! Sign up below for the next drop.'); return; }
   cart[id] = (cart[id] || 0) + 1;
   saveCart();
   renderCart();
